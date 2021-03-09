@@ -6,7 +6,7 @@ For siplicity COM port parameters are set manually inside Comunicator.cs class.
 
 The project is written in C# and is compiled with .NET CORE 3.1
 
-System.IO.Ports nuget package is required to build project with .NET CORE 3.1
+<b>System.IO.Ports</b> nuget package is required to build project with .NET CORE 3.1
 
 
 This program is written especially for testing ESP8266 module. Therefore are added
