@@ -11,7 +11,7 @@ The project is written in C# and is compiled with .NET CORE 3.1
 
 This program is written especially for testing ESP8266 module. Therefore are added
 2 special commands <b>+++</b> and <b>\0</b> . As you can see in the code, theese strings are
-interpreted as special and send without <CR><LF> \r\n new line termination.
+interpreted as special and send without \<CR>\<LF> \r\n new line termination.
 
 For convenience commands are not send until ENTER is pressed.
 
