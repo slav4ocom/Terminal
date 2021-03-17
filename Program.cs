@@ -8,12 +8,7 @@ namespace Terminal
 {
     class Program
     {
-        
-
-        
-       
-
-        static async Task ReceiveCycle()
+        static async void ReceiveCycle()
         {
             while (true)
             {
@@ -21,7 +16,7 @@ namespace Terminal
             }
         }
 
-      
+
         static async Task TransmitCycle()
         {
             while (true)
@@ -52,7 +47,7 @@ namespace Terminal
             Comunicator.InitPort();
             Comunicator.ShowPortInfo();
 
-            Task.Run(ReceiveCycle);
+            ReceiveCycle();
             await Task.Run(TransmitCycle);
 
             Comunicator.Close();
