@@ -48,7 +48,7 @@ namespace Terminal
             Comunicator.ShowPortInfo();
 
             ReceiveCycle();
-            await Task.Run(TransmitCycle);
+            await TransmitCycle();
 
             Comunicator.Close();
 
